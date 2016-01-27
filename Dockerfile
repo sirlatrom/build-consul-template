@@ -1,8 +1,6 @@
 FROM golang:1.6beta2
 
-ARG version=0.12.2
-
-ENV VERSION $version
+ENV VERSION=0.12.2
 
 RUN git clone https://github.com/hashicorp/consul-template.git /go/src/github.com/hashicorp/consul-template
 
